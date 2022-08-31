@@ -1,5 +1,8 @@
-# javascript
+# Projetos frontend
 
-Repositório para armazenar recursos básicos e avançados de JS.
+Projetos focados em aprendizado frontend.
 
-- [x] Arrow functions
+- [x] Conversor de medida CM para escala.
+- [ ] Projeto fullstack
+    - [ ] Backend Django
+    - [ ] Frontend ReactJS
