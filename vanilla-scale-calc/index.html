@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de escala</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <a href="../index.html">Voltar</a>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+
+            <label for="initial">CM inicial:</label>
+            <input type="number" id="initial" name="initial">
+        
+            <label for="final">CM final:</label>
+            <input type="number" id="final" name="final">
+
+            <label for="result">Resultado:</label>
+            <input type="text" id="result" name="result" placeholder="Diferença em escala">
+
+            <button class="btn" onclick="calcular()">Calcular</button>
+        </div>
+    </div>
+
+    <script>
+        function calcular() {
+            let initialValue = document.getElementById('initial').value;
+            let finalValue = document.getElementById('final').value;
+            let result = document.getElementById('result');
+
+            scale = finalValue / initialValue;
+
+            result.value = scale;
+        }
+    </script>
+</body>
+</html>
