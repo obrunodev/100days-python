@@ -1,28 +1,32 @@
-import { useState } from 'react'
-import Tweet from './components/Tweet'
+import { useState } from 'react';
+import Tweet from './components/Tweet';
+
+import './App.css';
+import AppRoutes from './routes';
 
 function App() {
-  // Inicializando um estado com strings dentro do array
-  const [tweets, setTweets] = useState<string[]>([
-    'Tweet 1',
-    'Tweet 2',
-    'Tweet 3',
-  ]);
-
-  function createTweet() {
-    setTweets([...tweets, 'Tweet 5']);
-  }
-
   return (
-    <>
-      <h1>Hello world</h1>
+    <AppRoutes />
+    // <>
+    //   <h1>Hello world</h1>
 
-      <button onClick={createTweet}>Adicionar tweet</button>
+    //   <button
+    //     onClick={createTweet}
+    //     style={{
+    //       border: 0,
+    //       background: '#333',
+    //       color: '#eee',
+    //       fontSize: '20px',
+    //       padding: '5px 10px'
+    //     }}
+    //   >
+    //     Adicionar tweet
+    //   </button>
       
-      {tweets.map(tweet => {
-        return <Tweet text={tweet} />
-      })}
-    </>
+    //   {tweets.map(tweet => {
+    //     return <Tweet text={tweet} />
+    //   })}
+    // </>
   )
 }
 
